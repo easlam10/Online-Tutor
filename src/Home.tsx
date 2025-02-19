@@ -1,9 +1,9 @@
-import { CoursesMain } from "./utils/courses/page";
+import { SubjectMain } from "./utils/courses/page";
 
 export default function () {
   return (
     <>
-    <CoursesMain/>
+    <SubjectMain/>
       {/* <Navbar /> */}
       {/* <Footer /> */}
     </>
