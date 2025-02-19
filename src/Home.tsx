@@ -1,13 +1,11 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './footer'
+import { SubjectsMain } from "./utils/subject/page";
 
-export default function 
-() {
+export default function () {
   return (
-   <>
-   <Navbar />
-   <Footer />
-   </>
-  )
+    <>
+    <SubjectsMain/>
+      {/* <Navbar /> */}
+      {/* <Footer /> */}
+    </>
+  );
 }

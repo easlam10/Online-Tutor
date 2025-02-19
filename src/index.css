@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+    --font-display: "Inter";
+  }
+
+  body{
+    list-style: none;
+  }
+  .MainPagination ul li button{
+    background-color: white;
+ color: black;
+ cursor: pointer;
+ border-radius: 5px;
+ margin-left: 10px;
+  }
+  .MainPagination ul li button:hover{
+    background-color: #1F1D0D;
+ color: white;
+ transition: all .3s ease-in-out;
+  }
