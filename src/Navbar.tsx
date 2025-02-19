@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Navbar() {
   return (
@@ -26,7 +25,7 @@ export default function Navbar() {
             <img src="/Online Education.png" />
             <h1 className="font-bold text-2xl">FindTutors</h1>
           </div>
-          <div className=" nav flex gap-[10px] ml-[350px]">
+          <div className=" nav flex gap-[10px] ml-[350px] text-sm">
             <p className="px-[20px] hover:bg-[#F6F6F6]  py-[10px]">Home</p>
             <p className="px-[20px] hover:bg-[#F6F6F6] py-[10px]">Subjects</p>
             <p className="px-[20px] hover:bg-[#F6F6F6] py-[10px]">Courses</p>
