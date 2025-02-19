@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import { SubjectsCircle } from "./SubjectsCircle";
+import { SubjectsCircle } from "./CoursesCircle";
 
 interface SubjectCardsProps {
   price: string;

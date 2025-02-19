@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ImEqualizer } from "react-icons/im";
 import Select, { SingleValue } from "react-select";
-import { SubjectCards } from "../../Components/subject/SubjectCards";
+import { SubjectCards } from "../../Components/subject/CoursesCards";
 import { Pagination } from "flowbite-react";
 import { cardData } from "./data";
 
@@ -10,7 +10,7 @@ interface OptionType {
   label: string;
 }
 
-export const SubjectsMain = () => {
+export const CoursesMain = () => {
   const [selectedSubject, setSelectedSubject] =
     useState<SingleValue<OptionType>>(null);
   const [selectedClass, setSelectedClass] =
