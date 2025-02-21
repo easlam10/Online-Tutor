@@ -3,30 +3,38 @@ import { ImEqualizer } from "react-icons/im";
 import Select, { SingleValue } from "react-select";
 import { SubjectCards } from "../../Components/subject/SubjectCards";
 import { Pagination } from "flowbite-react";
-import {  cardData2 } from "../subject/data";
+import { cardData } from "./data";
 
 interface OptionType {
   value: string;
   label: string;
 }
 
-export const CoursesMain = () => {
+export const SubjectMain = () => {
+  const [selectedSubject, setSelectedSubject] =
+    useState<SingleValue<OptionType>>(null);
   const [selectedClass, setSelectedClass] =
     useState<SingleValue<OptionType>>(null);
   const [selectedSorting, setSelectedSorting] =
     useState<SingleValue<OptionType>>(null);
 
+  // Pagination Logic
   const cardsPerPage = 9;
-  const totalPages = Math.ceil(cardData2.length / cardsPerPage);
+  const totalPages = Math.ceil(cardData.length / cardsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
 
   const onPageChange = (page: number) => setCurrentPage(page);
 
+  // Get the cards for the current page
   const startIndex = (currentPage - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
-  const currentCards = cardData2.slice(startIndex, endIndex);
+  const currentCards = cardData.slice(startIndex, endIndex);
 
-
+  const options: OptionType[] = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
 
   const option2: OptionType[] = [
     { value: "Red", label: "Red" },
@@ -51,13 +59,28 @@ export const CoursesMain = () => {
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <div className="w-full flex flex-col sm:flex-row gap-4">
-          
+            <Select
+              value={selectedSubject}
+              onChange={setSelectedSubject}
+              options={options}
+              className="w-full text-sm"
+              placeholder="Select Subjects"
+              styles={{
+                control: (base) => ({
+                  ...base,
+                  backgroundColor: "#F6F6F6",
+                  height: "45px",
+                  cursor: "pointer",
+                  border: "1px solid black",
+                }),
+              }}
+            />
             <Select
               value={selectedClass}
               onChange={setSelectedClass}
               options={option2}
-              className="w-[92%] text-sm"
-              placeholder="Select Courses"
+              className="w-full text-sm"
+              placeholder="Your Class"
               styles={{
                 control: (base) => ({
                   ...base,
@@ -86,7 +109,7 @@ export const CoursesMain = () => {
       <div className="w-full flex flex-col gap-8 md:gap-12">
         <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-4">
           <h1 className="font-bold text-lg text-center sm:text-left">
-            Showing {currentCards.length} of {cardData2.length} results
+            Showing {currentCards.length} of {cardData.length} results
           </h1>
           <div className="w-full sm:w-fit flex flex-col xs:flex-row gap-3">
             <button className="w-full xs:w-fit flex items-center justify-center gap-2 bg-[#F6F6F6] px-4 py-2.5 rounded-md border-2 border-[#e5e5e5] text-sm text-[#8F8F8F] hover:bg-[#eaeaea] transition-colors">
