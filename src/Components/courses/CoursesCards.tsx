@@ -10,10 +10,9 @@ interface SubjectCardsProps {
   year: string | number;
   pera2: string;
   studys?: string[];
-
 }
 
-export const SubjectCards: React.FC<SubjectCardsProps> = ({
+export const SubjectCards = ({
   price,
   userName,
   degrees,
@@ -22,8 +21,7 @@ export const SubjectCards: React.FC<SubjectCardsProps> = ({
   year,
   pera2,
   studys = ["Ielts", "Tofel", "PTE"],
-
-}) => {
+}: SubjectCardsProps) => {
   return (
     <div className="w-full  md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-xl border-3 border-[#e5e5e5] flex flex-col py-5 items-center justify-center gap-y-4 md:gap-y-6 p-4 ">
       {/* Top Section */}
@@ -37,7 +35,11 @@ export const SubjectCards: React.FC<SubjectCardsProps> = ({
       </div>
 
       {/* Profile Image */}
-      <img className="w-24 sm:w-32 md:w-36 rounded-full" src="/images/Subjects_images/img2.svg" alt="Profile" />
+      <img
+        className="w-24 sm:w-32 md:w-36 rounded-full"
+        src="/images/Subjects_images/img2.svg"
+        alt="Profile"
+      />
 
       {/* User Info */}
       <div className="w-full flex flex-col gap-y-1 items-center text-center">
