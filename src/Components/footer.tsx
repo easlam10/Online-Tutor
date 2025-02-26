@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <>
       {/* Newsletter section */}
-      <div className="w-full  h-auto md:h-[721px] mt-[355px] flex flex-col items-center justify-center bg-[#1F1D0D] relative">
-        <div className="w-[90%] md:w-[80%] h-auto md:h-[490px] p-6 md:p-0 flex justify-center items-center rounded-[10px] bg-[#F7FF62] shadow-[15px_15px_0_0_#FFD32B] absolute top-[-150px] md:top-[-255px]">
+      <div className="w-full  h-auto md:h-[721px] mt-[355px] flex flex-col items-center justify-center bg-[#A435F01A] relative">
+        <div className="w-[90%] md:w-[80%] h-auto md:h-[490px] p-6 md:p-0 flex justify-center items-center rounded-[10px] bg-[#A435F0] text-white shadow-[15px_15px_0_0_#8607DD] absolute top-[-150px] md:top-[-255px]">
           <div className="flex flex-col gap-4 md:gap-8 text-center md:text-left">
             <h1 className="text-[32px] md:text-[48px] font-bold">
               Subscribe to our Newsletter
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Footer section */}
-        <div className="text-white flex flex-wrap w-full  md:justify-evenly mt-[200px] md:mt-[150px] p-6 md:p-0 gap-8">
+        <div className="text-black flex flex-wrap w-full  md:justify-evenly mt-[200px] md:mt-[150px] p-6 md:p-0 gap-8">
           <div className="flex flex-col gap-6 w-full md:w-[324px]">
             <div className="flex justify-center md:justify-start">
               <img src="/Online Education.png" alt="Logo" />
