@@ -19,9 +19,9 @@ export const SubjectMain = () => {
     useState<SingleValue<OptionType>>(null);
 
   // Pagination Logic
-  const cardsPerPage = 9;
-  const totalPages = Math.ceil(cardData.length / cardsPerPage);
-  const [currentPage, setCurrentPage] = useState(1);
+    const cardsPerPage = 9;
+    const totalPages = Math.ceil(cardData.length / cardsPerPage);
+    const [currentPage, setCurrentPage] = useState(1);
 
   const onPageChange = (page: number) => setCurrentPage(page);
 
@@ -92,7 +92,7 @@ export const SubjectMain = () => {
               }}
             />
           </div>
-          <button className="w-full cursor-pointer sm:w-auto px-6 py-3 bg-[#1F1D0D] text-white font-bold text-base rounded-md hover:bg-[#363421] transition-colors">
+          <button className="w-full cursor-pointer sm:w-auto px-6 py-3 bg-[#A435F0] text-white font-bold text-base rounded-md hover:bg-[#363421] transition-colors">
             FIND TUTORS
           </button>
         </div>

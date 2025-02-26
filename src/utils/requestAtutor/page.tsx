@@ -114,9 +114,9 @@ export const RequestATutor = () => {
  
   return (
     <div className="w-full h-fit px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20 flex flex-col gap-16 md:gap-24 font-display">
-      <ToastContainer />
       {/* Header Section */}
       <div className="w-full flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-[#F6F6F6] p-6 md:p-12 lg:p-16 rounded-xl">
+      <ToastContainer />
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 gap-4 md:gap-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1F1D0D] leading-tight">
             Request A Tutor
@@ -144,7 +144,7 @@ export const RequestATutor = () => {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full flex flex-col gap-6 px-5"
+          className="w-full flex flex-col gap-6 border-2 border-dotted border-[#94938e] px-10 py-7"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {/* First Name */}

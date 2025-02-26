@@ -55,7 +55,7 @@ export const SubjectCards: React.FC<SubjectCardsProps> = ({
         {studys.map((subject, index) => (
           <SubjectsCircle key={index} label={subject} />
         ))}
-        <div className="px-3 py-1 rounded-2xl text-sm font-medium bg-[#FFD25D]">
+        <div className="px-3 py-1 rounded-2xl text-sm font-medium text-white bg-[#A435F0]">
           +2
         </div>
       </div>
@@ -71,8 +71,8 @@ export const SubjectCards: React.FC<SubjectCardsProps> = ({
       {/* View Profile Button */}
       <div className="flex gap-x-3 items-center justify-center cursor-pointer">
         <h1 className="font-medium text-base text-[#1F1D0D]">View Profile</h1>
-        <div className="w-6 h-6 bg-[#FFD25D] rounded-full flex justify-center items-center">
-          <FaArrowRight className="text-sm" />
+        <div className="w-6 h-6 bg-[#A435F0] rounded-full flex justify-center items-center">
+          <FaArrowRight className="text-sm text-white" />
         </div>
       </div>
     </div>
