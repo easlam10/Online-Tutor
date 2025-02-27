@@ -44,8 +44,9 @@ export const CoursesMain = () => {
       {/* Hero Section */}
       <div className="w-full h-auto flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-[#F6F6F6] p-6 md:p-12 lg:p-16 rounded-xl">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 gap-4 md:gap-6">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1F1D0D] leading-tight">
-            Find the best tutor for your subjects
+          <h1 className="text-3xl w-[475px] md:text-4xl lg:text-5xl font-extrabold text-[#1F1D0D] leading-tight">
+          Find the best tutors
+          & courses
           </h1>
           <p className="text-sm md:text-base text-[#29281E] max-w-xl">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -69,7 +70,7 @@ export const CoursesMain = () => {
               }}
             />
           </div>
-          <button className="w-full cursor-pointer sm:w-auto px-6 py-3 bg-[#1F1D0D] text-white font-bold text-base rounded-md hover:bg-[#363421] transition-colors">
+          <button className="w-full cursor-pointer sm:w-auto px-6 py-3 bg-[#A435F0] text-white font-bold text-base rounded-md hover:bg-[#363421] transition-colors">
             FIND TUTORS
           </button>
         </div>

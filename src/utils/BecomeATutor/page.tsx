@@ -109,9 +109,9 @@ export const BecomeATutorMain = () => {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full flex flex-col gap-6 px-5"
+          className="w-full flex flex-col gap-6  border-2 border-dotted border-[#94938e] px-10 py-7"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 ">
             {/* First Name */}
             <div className="flex flex-col gap-y-3">
               <label className="font-medium text-xl text-[#1F1D0D]">
