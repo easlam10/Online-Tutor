@@ -1,6 +1,8 @@
-import React from "react";
+import { useNavigate } from "react-router";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* Newsletter section */}
@@ -32,7 +34,9 @@ export default function Footer() {
           <div className="flex flex-col gap-6 w-full md:w-[324px]">
             <div className="flex justify-center md:justify-start">
               <img src="/Online Education.png" alt="Logo" />
-              <h1 className="text-[32px] md:text-[40px] font-bold">FindTutors</h1>
+              <h1 className="text-[32px] md:text-[40px] font-bold">
+                FindTutors
+              </h1>
             </div>
             <p className="text-xs text-center md:text-left">
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -50,20 +54,42 @@ export default function Footer() {
           <div className="flex flex-col gap-6 w-full md:w-auto text-center md:text-left">
             <h1 className="font-bold">Links</h1>
             <ul className="space-y-2">
-              <li>Home</li>
-              <li>Courses</li>
-              <li>Subject</li>
-              <li>Request a Tutor</li>
+              <li className="cursor-pointer" onClick={() => navigate("/")}>
+                Home
+              </li>
+              <li
+                className="cursor-pointer"
+                onClick={() => navigate("/courses")}
+              >
+                Courses
+              </li>
+              <li
+                className="cursor-pointer"
+                onClick={() => navigate("/subjects")}
+              >
+                Subject
+              </li>
+              <li
+                className="cursor-pointer"
+                onClick={() => navigate("/requestatutor")}
+              >
+                Request a Tutor
+              </li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-6 w-full md:w-auto text-center md:text-left">
             <h1 className="font-bold">Support</h1>
             <ul className="space-y-2">
-              <li>About US</li>
-              <li>Blogs</li>
-              <li>Contacts</li>
-              <li>FAQ</li>
+              <li className="cursor-pointer">About US</li>
+              <li className="cursor-pointer">Blogs</li>
+              <li
+                className="cursor-pointer"
+                onClick={() => navigate("/contactus")}
+              >
+                Contacts Us
+              </li>
+              <li className="cursor-pointer">FAQ</li>
             </ul>
           </div>
 
