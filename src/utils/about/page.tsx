@@ -27,7 +27,7 @@ export const AboutUs = () => {
   ];
 
   return (
-    <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 flex flex-col gap-16 md:gap-24 font-display">
+    <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-4 flex flex-col gap-16 md:gap-24 font-display">
       <div className="w-full flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-[#F6F6F6] p-6 md:p-12 lg:p-16 rounded-xl">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 gap-4 md:gap-6">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1F1D0D] leading-tight max-w-lg">
@@ -74,7 +74,7 @@ export const AboutUs = () => {
 
       <div className="w-full flex flex-col lg:flex-row gap-10 px-4 sm:px-8 md:px-16">
         <div className="lg:w-[45%] flex flex-col gap-y-6 text-center lg:text-left">
-          <h1 className="font-extrabold text-3xl md:text-5xl">Contact Us</h1>
+          <h1 className="font-extrabold text-3xl md:text-5xl ">Contact Us</h1>
           <p className="font-normal text-sm md:text-base max-w-lg mx-auto lg:mx-0">
             Viverra maecenas accumsan lacus vel facilisis volutpat.
           </p>
