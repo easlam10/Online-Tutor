@@ -9,6 +9,7 @@ import { ContactUs } from "./utils/contactus/page";
 import ScrollToTop from "./Components/ScrollToTop"; 
 import Footer from "./Components/footer";
 import { AboutUs } from "./utils/about/page";
+import { BlogMain } from "./utils/blog/page";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/requestatutor" element={<RequestATutor />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/blog" element={<BlogMain />} />
 
       </Routes>
       <Footer />
