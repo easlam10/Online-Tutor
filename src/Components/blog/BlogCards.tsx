@@ -16,7 +16,7 @@ export const BlogCards = ({ label, src }: BlogCardsTypes) => {
         <div className="py-2 px-4 bg-[#F6F6F6] rounded-lg absolute right-3 top-3 text-xs">
           PHOTOGRAPHY
         </div>
-        <img src={src} className="w-full h-[220px] object-cover rounded-md" alt="" />
+        <img src={src} className="w-full h-[230px] object-cover rounded-md" alt="" />
       </div>
       <div className="w-full h-fit flex flex-col gap-y-4 ">
         <div className="w-full flex items-center flex-wrap gap-2 sm:gap-4">
