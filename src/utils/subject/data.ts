@@ -34,7 +34,7 @@ export const cardData = [
       pera2: " of experience in teaching English language and literature.",
       studys: ["English", "Creative Writing"],
       status: "Busy",
-      src:"/images/Subjects_images/img4.svg"
+      src:"/images/Subjects_images/img4.svg.svg.svg"
     },
     {
       price: "Rs.2000/hour",
@@ -148,7 +148,7 @@ export const cardData = [
       pera2: " of experience in teaching English language and literature.",
       studys: ["English", "Creative Writing"],
       status: "Busy",
-      src:"/images/Subjects_images/img4.svg"
+      src:"/images/Subjects_images/img4.svg.svg"
     },
     {
       price: "Rs.2000/hour",
@@ -224,3 +224,88 @@ export const cardData = [
       src: `/images/Subjects_images/img${i + 10}.svg`
     }))
   ];
+
+
+  export const BlogcardData = [
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Top Technical Skills All Employees Need in 2022",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "How AI is Transforming the Future of Work",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Importance of Cybersecurity in the Digital Age",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "Web Development Trends to Watch in 2024",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "A Beginner's Guide to Cloud Computing",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Rise of Remote Work: Challenges and Opportunities",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "Essential Soft Skills for Tech Professionals",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Role of Blockchain in Modern Businesses",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "How to Get Started with Machine Learning",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Future of 5G Technology and Its Impact",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "Top Programming Languages to Learn in 2024",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "Understanding UI/UX Design Principles",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "Cyber Threats and How to Stay Protected Online",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Benefits of Learning DevOps",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "What is Full-Stack Development?",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "Data Science vs Data Analytics: Key Differences",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "How to Build a Personal Brand in Tech",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Evolution of Artificial Intelligence",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "The Basics of Ethical Hacking and Cybersecurity",
+    },
+    {
+      src: "/images/Blog_images/img1.svg",
+      label: "How to Become a Successful Freelancer in Tech",
+    },
+  ];
+  

@@ -85,7 +85,7 @@ export const ContactUs = () => {
     "/images/ContactUS_images/img9.svg",
   ];
   return (
-    <div className="w-full h-fit  py-20 flex flex-col gap-y-16">
+    <div className="w-full h-fit  py-4 flex flex-col gap-y-16">
       {/* Contact Info Section */}
       <div className="w-full flex flex-col lg:flex-row gap-10 px-6 md:px-16 lg:px-36">
         {/* Left Side - Contact Info */}
@@ -103,6 +103,7 @@ export const ContactUs = () => {
                 label={item.label}
                 Number1={item.Number1}
                 Number2={item.Number2}
+                backGround="bg-black"
               />
             ))}
           </div>

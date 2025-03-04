@@ -78,7 +78,7 @@ export const BecomeATutorMain = () => {
     }
   };
   return (
-    <div className="w-full h-fit px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-20 flex flex-col gap-16 md:gap-24 font-display">
+    <div className="w-full h-fit px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-12 lg:py-4 flex flex-col gap-16 md:gap-24 font-display">
             <ToastContainer />
       {/* Header Section */}
       <div className="w-full flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-[#F6F6F6] p-6 md:p-12 lg:p-16 rounded-xl">
